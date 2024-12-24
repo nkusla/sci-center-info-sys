@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="boravi u" directorySegmentName="seg_0" id="5216C07E-EBB8-8819-5130-8F8BDF433C96">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:08:41 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<sourcePk>E2860587-6D40-231B-BDAD-D92481D72E46</sourcePk>
+<targetPk>8D63B27F-328C-2E8B-8060-75911A41C363</targetPk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>12AABBCB-86C0-DB22-64D2-5EEB38D543CC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>44A2431B-AEF4-07A5-1E64-072B420BAD9E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

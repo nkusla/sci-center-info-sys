@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44A2431B-AEF4-07A5-1E64-072B420BAD9E" name="Osoba">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:44:25 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorAttributeID>2ECE171E-4091-8C2E-C2AB-023F7093B64D</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="C8F70B8F-D56F-7202-AA7C-4D2A3234C9B6">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:45:10 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="JMBG" id="8711B1DF-DBE0-D3C5-C626-8463CA996462">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:45:56 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13 CHAR</dataTypeSize>
+<ownDataTypeParameters>13 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IME" id="AA096128-A08A-3B23-AA22-54AC515501DA">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:47:52 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRZ" id="01B601BD-89CA-3D36-8E51-56F3226FEA93">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:48:27 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BR_TEL" id="759C4DC8-61DC-2E19-70C6-B4E53015BD4C">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:49:03 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="D72A76D8-AD5C-139F-682E-E3717CA99BCD">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:50:18 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BR_SOB" id="C8F09670-1142-41C4-8BFD-51C2182E6229">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:08:41 UTC</createdTime>
+<generatorID>5216C07E-EBB8-8819-5130-8F8BDF433C96</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<referedAttribute>D041710C-175B-969F-34F1-FDD5BDC82A83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIP" id="2ECE171E-4091-8C2E-C2AB-023F7093B64D">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:17:23 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D63B27F-328C-2E8B-8060-75911A41C363" name="Osoba PK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 01:46:36 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C8F70B8F-D56F-7202-AA7C-4D2A3234C9B6</attributeRef>
+<attributeRef>C8F09670-1142-41C4-8BFD-51C2182E6229</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

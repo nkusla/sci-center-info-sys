@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0456286D-9AE2-BA5B-0520-95AFC5EA2297" name="Zaposlen">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:24:10 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>44A2431B-AEF4-07A5-1E64-072B420BAD9E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="5966BC5F-2AA2-73F8-A6E7-B2AA6A410AA3">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:26:13 UTC</createdTime>
+<generatorID>893D2AB6-0F04-3762-DCF6-8552322BF70A</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C8F70B8F-D56F-7202-AA7C-4D2A3234C9B6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BR_SOB" id="406CBCF3-B00A-B47D-9F4F-C940BF2109D0">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:26:13 UTC</createdTime>
+<generatorID>893D2AB6-0F04-3762-DCF6-8552322BF70A</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C8F09670-1142-41C4-8BFD-51C2182E6229</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

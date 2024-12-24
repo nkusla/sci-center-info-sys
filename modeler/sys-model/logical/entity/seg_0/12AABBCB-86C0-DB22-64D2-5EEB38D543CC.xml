@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12AABBCB-86C0-DB22-64D2-5EEB38D543CC" name="Hotelska soba">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:04:39 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BR_SOB" id="D041710C-175B-969F-34F1-FDD5BDC82A83">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:04:55 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KAP" id="8D93970C-16B2-4596-7ECA-461D5F57DD31">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:05:10 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TER" id="631F53C6-6DE8-73B3-0C0B-880BFEF90CEE">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:05:24 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REN" id="F6214BEA-8560-BB9A-C3B4-CDEB830B3F30">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:07:54 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2860587-6D40-231B-BDAD-D92481D72E46" name="Hotelska soba PK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-11-07 02:04:58 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2AE7EE93-2BFC-4467-E799-BCC9D2C5799D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D041710C-175B-969F-34F1-FDD5BDC82A83</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
