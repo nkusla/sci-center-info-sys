@@ -1,25 +1,25 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rukovodi" directorySegmentName="seg_0" id="16E0FD76-B202-63E3-12DC-38E79AC1CA90">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rukovodi" directorySegmentName="seg_0" id="06981A7E-3E78-D472-D7CC-82075073A5CA">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 17:14:35 UTC</createdTime>
+<createdTime>2024-12-24 19:01:33 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
 </engineerTo>
-<targetPk>79897DC2-1C02-6172-50A5-1316DC32C3C6</targetPk>
+<targetPk>928DCCDA-9569-FE87-95FF-9FB7ABBB5257</targetPk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>4B46F47C-266F-66DC-209A-3C15FBEEB48B</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>AD8FC1CA-D6AB-5566-2521-B4E3C0DED53E</targetEntity>
+<targetEntity>2F8A640A-6FA9-E7A8-5E71-7E29E7775EFE</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<attribute name="UPR" id="09218D2B-CEC9-6EC7-AFB3-E7DA0C677C29">
+<attribute name="UPR" id="6AEA1E9D-C292-8FD0-D074-E8484D1DABAB">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 17:14:47 UTC</createdTime>
+<createdTime>2024-12-24 19:01:41 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -28,8 +28,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 </attribute>
 </attributes>
 </Relation>

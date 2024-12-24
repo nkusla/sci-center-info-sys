@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D83BA30B-EAFA-0DB2-51F6-8BC66134CEAD" name="rukovodi">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OSOBA_ID" id="909322AE-6BFA-E066-F372-4A1703FD0B6F">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="440B410D-F28F-ED62-3C5D-477F910E6248" referredColumn="8C8ED130-33ED-42DD-6833-C5C0B2345C4B"/>
+</associations>
+</Column>
+<Column name="ID_PROG" id="36325AD6-0ED9-4946-B6A9-101D2831092D">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19C40E1A-8D3C-35E6-EFFB-92B1BDF770EF" referredColumn="E7FB2202-5F05-FF84-984E-1BFBB29D0E14"/>
+</associations>
+</Column>
+<Column name="UPR" id="29705A65-723A-C044-12CD-434F1CC5D7C4">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>6AEA1E9D-C292-8FD0-D074-E8484D1DABAB</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BBE93A9-5A4F-1F93-4754-E525642AF155" name="rukovodi_PK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909322AE-6BFA-E066-F372-4A1703FD0B6F"/>
+<colUsage columnID="36325AD6-0ED9-4946-B6A9-101D2831092D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8481C75-B80B-7807-5CF5-78CEBC77A127" name="Osoba_FKv3">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>06981A7E-3E78-D472-D7CC-82075073A5CA</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909322AE-6BFA-E066-F372-4A1703FD0B6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA65B189-5A3A-6327-A2D1-0300CC7D39A9" name="Naucni_program_FKv1">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>06981A7E-3E78-D472-D7CC-82075073A5CA</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36325AD6-0ED9-4946-B6A9-101D2831092D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

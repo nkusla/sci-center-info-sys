@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97A9174C-39B8-D08A-1FB7-5C307019EFC5" name="Seminar">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>AD8FC1CA-D6AB-5566-2521-B4E3C0DED53E</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SEM" id="6BAC2B9F-F8A8-6C48-805B-D9D588DB6E70">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>6E1C4ED7-E380-7960-C052-ABC717889A6D</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_START" id="9DE09EB3-F298-1C65-8E8D-2A096BB645E9">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>83B348B4-76EE-13D0-4370-0EA92B3E88B8</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_KRAJ" id="2CA69730-A58A-25F4-CD24-3F9543151E54">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>0F9E90DA-ACA2-BE8B-FB23-A1AA4BB78FE0</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIP" id="F5672F38-7BE9-679C-95DC-37AB63B23CE3">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>A38969A0-F171-2067-ABC3-369B6BBDE874</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROG" id="37C4CEA6-BDE5-13C1-6114-DD92468DF733">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>01F137C9-0EBD-A78E-313C-8318DAC0887B</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE448C90-79D8-CC70-C70D-CCC6BC8DB20C" referredColumn="E7FB2202-5F05-FF84-984E-1BFBB29D0E14"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24E5D0DB-4E64-B89E-1365-CCAA05AC3DBE" name="Seminar_PK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>79897DC2-1C02-6172-50A5-1316DC32C3C6</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BAC2B9F-F8A8-6C48-805B-D9D588DB6E70"/>
+<colUsage columnID="37C4CEA6-BDE5-13C1-6114-DD92468DF733"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAAA7FF9-322C-B053-6CB5-A0CB20562A1F" name="Naucni_program_FKv2">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<generatorID>93F1ED3B-9340-1512-DD04-310E9E721A92</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37C4CEA6-BDE5-13C1-6114-DD92468DF733"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
