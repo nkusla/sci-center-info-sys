@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B0F221E8-4AB7-43B1-B617-42EDA122615D" containerWithKeyObject="7D6659B4-1AAA-2930-8453-34D613167EEC" localFKIndex="032FD313-5211-8A98-E077-95CAF49F93B2" name="Hotelska_soba_FK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>D25358D6-E768-39B3-F4F5-E24E5C7982D7</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<referredTableLongName>Hotelska_soba</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>678D5F86-1E44-1CA1-A41F-391197442F7F</referredTableID>
+<keyObject>2A871C49-6A6E-FDE3-BBAC-41DDE690D51B</keyObject>
+<referredKeyID>2A871C49-6A6E-FDE3-BBAC-41DDE690D51B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>BR_SOB</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

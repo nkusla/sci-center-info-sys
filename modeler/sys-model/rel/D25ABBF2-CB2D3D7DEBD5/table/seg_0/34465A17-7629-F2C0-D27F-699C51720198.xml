@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34465A17-7629-F2C0-D27F-699C51720198" name="Seminar">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>AD8FC1CA-D6AB-5566-2521-B4E3C0DED53E</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SEM" id="AF16A012-F8B3-5ED9-62A0-9D59A29C52EF">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>6E1C4ED7-E380-7960-C052-ABC717889A6D</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_START" id="269F1CED-1484-A440-ED27-E47128DE5236">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>83B348B4-76EE-13D0-4370-0EA92B3E88B8</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_KRAJ" id="D0A2103B-0D48-3D59-2B26-A08900BD5EAA">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>0F9E90DA-ACA2-BE8B-FB23-A1AA4BB78FE0</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIP" id="574191C8-CB07-896E-1F97-97510D045865">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>A38969A0-F171-2067-ABC3-369B6BBDE874</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROG" id="C0E1678C-7E8D-31EE-9F7A-C30EC1B6268C">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>01F137C9-0EBD-A78E-313C-8318DAC0887B</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CB6E8D6-A9F7-4638-2B3F-57F3A54CC881" referredColumn="E0D3B761-BC2C-D601-C223-1C8C064A8ED7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30E70D2D-B29D-42E8-C479-E7DD677C4827" name="Seminar_PK">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>79897DC2-1C02-6172-50A5-1316DC32C3C6</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF16A012-F8B3-5ED9-62A0-9D59A29C52EF"/>
+<colUsage columnID="C0E1678C-7E8D-31EE-9F7A-C30EC1B6268C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2A227A3-F937-1746-347D-BFC8AB66B917" name="Naucni_program_FKv2">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
+<generatorID>93F1ED3B-9340-1512-DD04-310E9E721A92</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0E1678C-7E8D-31EE-9F7A-C30EC1B6268C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

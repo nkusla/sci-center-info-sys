@@ -1,27 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF98FFCA-452F-30B8-C17F-4D45370D73D2" name="Naucni_program">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CE6CC3D-C999-8A18-5755-3F73A62CAF47" name="Naucni_program">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>2F8A640A-6FA9-E7A8-5E71-7E29E7775EFE</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PROG" id="E7FB2202-5F05-FF84-984E-1BFBB29D0E14">
+<Column name="ID_PROG" id="E0D3B761-BC2C-D601-C223-1C8C064A8ED7">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>DD8F4B39-C942-2DB4-E4CA-41CD19AF2EE7</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAZ" id="01257202-4566-BA03-DCA2-BAF31BA34243">
+<Column name="NAZ" id="CB3F8C2A-F6CE-6B8A-014C-4C0FD6F605CF">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>910905C7-B1F3-8225-6AEB-52A29EF8B35A</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -32,45 +33,46 @@
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_OD" id="3ED42BC5-65E8-2583-F38B-CDBCA979C8FB">
+<Column name="ID_OD" id="C4B25AE4-3BA0-241C-5C88-77B591D16E62">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>1B123307-F558-8CCF-B07C-8A4581F9E224</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9D4EFEF0-4FF7-0170-3E43-8B2215228A07" referredColumn="BFA0127D-8305-E38C-EECE-0B5C88CCBFE3"/>
+<colAssociation fkAssociation="4A8ABCA7-81AA-C04A-6E26-567C2EF52BB3" referredColumn="203137D2-4107-B6CF-8F4F-D509DBDD374D"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B8C472E5-E6FE-FBD8-09F7-30036E0102B3" name="Naucni_program_PK">
+<ind_PK_UK id="0ACA4875-37A6-4BD0-5D8E-39DFD6005772" name="Naucni_program_PK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>928DCCDA-9569-FE87-95FF-9FB7ABBB5257</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E7FB2202-5F05-FF84-984E-1BFBB29D0E14"/>
+<colUsage columnID="E0D3B761-BC2C-D601-C223-1C8C064A8ED7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C96DA0C8-1CC3-1087-F312-7E271E2BBD19" name="Odeljenje_FK">
+<ind_PK_UK id="18E10E56-D4B5-515E-FA00-5571BCE5DA61" name="Odeljenje_FK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>72365C1E-1E47-6DD4-C64C-D2BD7B8A650A</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3ED42BC5-65E8-2583-F38B-CDBCA979C8FB"/>
+<colUsage columnID="C4B25AE4-3BA0-241C-5C88-77B591D16E62"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

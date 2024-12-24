@@ -24,8 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NAZ" id="488AF5B4-3054-CE1E-4D06-377EF43E0DD3">
 <createdBy>nikol</createdBy>
@@ -47,8 +48,9 @@
 <createdBy>nikol</createdBy>
 <createdTime>2024-12-24 17:13:19 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

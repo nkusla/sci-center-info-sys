@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F927E64-C2A0-2AAD-18A5-9779838751D4" name="Oprema">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5244C9F-FC7C-F5CB-8A61-03E88C22BFB9" name="Oprema">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>282BA209-B593-834A-7266-367A4E6EC8DB</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_OP" id="4A7B00A6-E969-F91C-625A-D349514C5F8C">
+<Column name="ID_OP" id="51695420-7FF0-9BC8-4539-0BF3956D3DCD">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>93F9643C-ED0E-95F0-5675-835EDA2D6281</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAZ" id="4F0161C1-3BA2-A5E0-9C9C-89EDE01BEC8E">
+<Column name="NAZ" id="1ADAE24A-6ED0-70E9-91EF-FC16D4DA9901">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>8CC52DEE-995F-9FB3-4F5D-DF6EDA74B52D</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MAX_KOL" id="5C79A7CD-8F6E-BF91-FAC5-28D86245E12B">
+<Column name="MAX_KOL" id="151F389D-2DC9-2583-B4F9-DA1BD682364F">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>906D4F19-210F-45A3-C6A3-5AD2E696BD44</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OSOBA_ID" id="ACEBD140-6D0D-BF07-6BD3-FA16CE013339">
+<Column name="Osoba_ID" id="F9A6E0EA-5AB7-B825-AB41-ACC40BFD06E5">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>84C8C83D-C418-7650-4553-48DE94338DDE</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -56,76 +56,78 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="CAA82373-CD16-5CE2-A0F6-4CC5060F56FF" referredColumn="8C8ED130-33ED-42DD-6833-C5C0B2345C4B"/>
+<colAssociation fkAssociation="CCB91C2C-5A4C-7E26-CAF8-40DB8ACE6696" referredColumn="9A8F87C4-5A59-F1B1-79F6-16E6F7CAD885"/>
 </associations>
 </Column>
-<Column name="ID_SEM" id="7DD0612E-8F6A-D53C-06E3-6E4E5A726D11">
+<Column name="ID_SEM" id="20FF5CB9-0A01-F1AF-3732-DA46C71E637D">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>3A1ECAEC-2E56-258E-0746-2576319AFB3A</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="59994325-FEF3-2619-FDBC-A1C3CB6CB1B5" referredColumn="6BAC2B9F-F8A8-6C48-805B-D9D588DB6E70"/>
+<colAssociation fkAssociation="F766B6EF-B82A-BF81-67C5-40604AC65722" referredColumn="AF16A012-F8B3-5ED9-62A0-9D59A29C52EF"/>
 </associations>
 </Column>
-<Column name="ID_PROG" id="778F3953-616E-6C7F-E8F0-9988A8C6B1D2">
+<Column name="ID_PROG" id="EA68FEDC-077B-52C4-C610-A56DFDFE83FD">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>954FACCE-61F8-C039-9333-CEB10B08CEF5</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="59994325-FEF3-2619-FDBC-A1C3CB6CB1B5" referredColumn="37C4CEA6-BDE5-13C1-6114-DD92468DF733"/>
+<colAssociation fkAssociation="F766B6EF-B82A-BF81-67C5-40604AC65722" referredColumn="C0E1678C-7E8D-31EE-9F7A-C30EC1B6268C"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="399415A9-22CF-12A6-BD7B-B2B17DFA48F7" name="Oprema_PK">
+<ind_PK_UK id="1EAEE784-F68A-1DF4-552C-D971498CCE9E" name="Oprema_PK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>DD8F11CE-E31E-7C4E-79B0-7A00A5AD93B4</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4A7B00A6-E969-F91C-625A-D349514C5F8C"/>
+<colUsage columnID="51695420-7FF0-9BC8-4539-0BF3956D3DCD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AB161344-0CD1-D201-B9D0-5D020DA3C84E" name="Osoba_FKv2">
+<ind_PK_UK id="C3F9FE7B-9DD2-5496-FF3A-CA8EC4D1A939" name="Osoba_FKv2">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>637BA116-418B-D655-056B-95F4AB709DD3</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="ACEBD140-6D0D-BF07-6BD3-FA16CE013339"/>
+<colUsage columnID="F9A6E0EA-5AB7-B825-AB41-ACC40BFD06E5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BFA79FB4-6620-DF1F-88D7-07C38C99B26B" name="Seminar_FKv2">
+<ind_PK_UK id="FD8FA0C9-3A88-5F4C-63B5-63D4B3E6F8D4" name="Seminar_FKv2">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>6EF1D8F5-A4C8-3D4D-DF75-E12681700EC6</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7DD0612E-8F6A-D53C-06E3-6E4E5A726D11"/>
-<colUsage columnID="778F3953-616E-6C7F-E8F0-9988A8C6B1D2"/>
+<colUsage columnID="20FF5CB9-0A01-F1AF-3732-DA46C71E637D"/>
+<colUsage columnID="EA68FEDC-077B-52C4-C610-A56DFDFE83FD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

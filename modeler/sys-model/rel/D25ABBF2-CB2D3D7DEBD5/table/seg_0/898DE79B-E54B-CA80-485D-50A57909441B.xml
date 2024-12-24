@@ -1,27 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5554AB5-1D0A-6E03-922A-DAD4F527394B" name="Odeljenje">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="898DE79B-E54B-CA80-485D-50A57909441B" name="Odeljenje">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>B1DD7A69-AC99-E5F1-162D-F3AB7E0EE7FA</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_OD" id="BFA0127D-8305-E38C-EECE-0B5C88CCBFE3">
+<Column name="ID_OD" id="203137D2-4107-B6CF-8F4F-D509DBDD374D">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>AAF2A5D8-B35B-8FBD-9CC6-8A85894CE602</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NAZ" id="B2889276-08B8-3616-EDB3-1870CCF65D76">
+<Column name="NAZ" id="61A398F5-5386-314F-EEFB-44659E7FC913">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>488AF5B4-3054-CE1E-4D06-377EF43E0DD3</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -34,16 +35,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="ABA581FC-0403-01CD-8A7C-EB6922973836" name="Odeljenje_PK">
+<ind_PK_UK id="EBF37857-B235-B1A7-9388-8A06A3F33C4B" name="Odeljenje_PK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-12-24 19:09:51 UTC</createdTime>
+<createdTime>2024-12-24 21:12:51 UTC</createdTime>
 <generatorID>93886B02-4317-6425-2BD0-6D4080AC8199</generatorID>
 <ownerDesignName>sys-model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BFA0127D-8305-E38C-EECE-0B5C88CCBFE3"/>
+<colUsage columnID="203137D2-4107-B6CF-8F4F-D509DBDD374D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -81,7 +81,8 @@
 <referedAttribute>DD8F4B39-C942-2DB4-E4CA-41CD19AF2EE7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -90,8 +91,9 @@
 <createdBy>nikol</createdBy>
 <createdTime>2024-12-24 17:09:46 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
