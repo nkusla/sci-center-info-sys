@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rukovodi" directorySegmentName="seg_0" id="16E0FD76-B202-63E3-12DC-38E79AC1CA90">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:14:35 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<targetPk>79897DC2-1C02-6172-50A5-1316DC32C3C6</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4B46F47C-266F-66DC-209A-3C15FBEEB48B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AD8FC1CA-D6AB-5566-2521-B4E3C0DED53E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="UPR" id="09218D2B-CEC9-6EC7-AFB3-E7DA0C677C29">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:14:47 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

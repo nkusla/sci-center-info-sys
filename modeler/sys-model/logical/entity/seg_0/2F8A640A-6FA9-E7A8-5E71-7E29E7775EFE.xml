@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12AABBCB-86C0-DB22-64D2-5EEB38D543CC" name="Hotelska_soba">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2F8A640A-6FA9-E7A8-5E71-7E29E7775EFE" name="Naucni_program">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:39 UTC</createdTime>
+<createdTime>2024-12-24 17:07:08 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="BR_SOB" id="D041710C-175B-969F-34F1-FDD5BDC82A83">
+<Attribute name="ID_PROG" id="DD8F4B39-C942-2DB4-E4CA-41CD19AF2EE7">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:55 UTC</createdTime>
+<createdTime>2024-12-24 17:07:53 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -27,34 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="KAP" id="8D93970C-16B2-4596-7ECA-461D5F57DD31">
+<Attribute name="NAZ" id="910905C7-B1F3-8225-6AEB-52A29EF8B35A">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:05:10 UTC</createdTime>
-<ownerDesignName>sys-model</ownerDesignName>
-<engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TER" id="631F53C6-6DE8-73B3-0C0B-880BFEF90CEE">
-<createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:05:24 UTC</createdTime>
-<ownerDesignName>sys-model</ownerDesignName>
-<engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT034</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="REN" id="F6214BEA-8560-BB9A-C3B4-CDEB830B3F30">
-<createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:07:54 UTC</createdTime>
+<createdTime>2024-12-24 17:08:04 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -63,21 +38,36 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_OD" id="1B123307-F558-8CCF-B07C-8A4581F9E224">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:13:49 UTC</createdTime>
+<generatorID>72365C1E-1E47-6DD4-C64C-D2BD7B8A650A</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AAF2A5D8-B35B-8FBD-9CC6-8A85894CE602</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E2860587-6D40-231B-BDAD-D92481D72E46" name="Hotelska soba PK">
+<identifier id="928DCCDA-9569-FE87-95FF-9FB7ABBB5257" name="Naucni_program PK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:58 UTC</createdTime>
+<createdTime>2024-12-24 17:08:01 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D041710C-175B-969F-34F1-FDD5BDC82A83</attributeRef>
+<attributeRef>DD8F4B39-C942-2DB4-E4CA-41CD19AF2EE7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

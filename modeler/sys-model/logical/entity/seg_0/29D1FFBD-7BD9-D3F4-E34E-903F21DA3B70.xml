@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12AABBCB-86C0-DB22-64D2-5EEB38D543CC" name="Hotelska_soba">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29D1FFBD-7BD9-D3F4-E34E-903F21DA3B70" name="Radna_prostorija">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:39 UTC</createdTime>
+<createdTime>2024-12-24 17:09:26 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="BR_SOB" id="D041710C-175B-969F-34F1-FDD5BDC82A83">
+<Attribute name="ID_RP" id="9AD83305-6642-F2DE-8DB6-B156195FBDBA">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:55 UTC</createdTime>
+<createdTime>2024-12-24 17:09:35 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -27,34 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="KAP" id="8D93970C-16B2-4596-7ECA-461D5F57DD31">
+<Attribute name="NAZ" id="9B8BD450-934D-A3C6-64C1-ADC01F3EA43A">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:05:10 UTC</createdTime>
-<ownerDesignName>sys-model</ownerDesignName>
-<engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TER" id="631F53C6-6DE8-73B3-0C0B-880BFEF90CEE">
-<createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:05:24 UTC</createdTime>
-<ownerDesignName>sys-model</ownerDesignName>
-<engineerTo>
-<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT034</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="REN" id="F6214BEA-8560-BB9A-C3B4-CDEB830B3F30">
-<createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:07:54 UTC</createdTime>
+<createdTime>2024-12-24 17:09:48 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
@@ -63,21 +38,64 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOK" id="D8F5B5A1-8807-EE10-7C8A-AA88ABC560EF">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:09:59 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIP" id="549472FB-643A-1ADE-BF5C-6037791172F1">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:10:15 UTC</createdTime>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROG" id="F2988CF7-3072-53D0-2EE3-4A936378A39E">
+<createdBy>nikol</createdBy>
+<createdTime>2024-12-24 17:11:17 UTC</createdTime>
+<generatorID>67CBED53-C46A-68CF-4164-09D80E16CD02</generatorID>
+<ownerDesignName>sys-model</ownerDesignName>
+<engineerTo>
+<item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DD8F4B39-C942-2DB4-E4CA-41CD19AF2EE7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E2860587-6D40-231B-BDAD-D92481D72E46" name="Hotelska soba PK">
+<identifier id="78F953A5-2694-E123-9AAB-2EC995C3DE1A" name="Radna_prostorija PK">
 <createdBy>nikol</createdBy>
-<createdTime>2024-11-07 02:04:58 UTC</createdTime>
+<createdTime>2024-12-24 17:09:46 UTC</createdTime>
 <ownerDesignName>sys-model</ownerDesignName>
 <engineerTo>
 <item key="D25ABBF2-4FD5-116F-ED40-CB2D3D7DEBD5" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D041710C-175B-969F-34F1-FDD5BDC82A83</attributeRef>
+<attributeRef>9AD83305-6642-F2DE-8DB6-B156195FBDBA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
