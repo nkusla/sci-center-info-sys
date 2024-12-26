@@ -1,7 +1,7 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.table import Table
-from modules.connection import connect
+from modules.utils import db_connect
 
 class BaseEntity:
 		def __init__(self, console: Console, table_name: str, table_title: str, columns: list):
@@ -11,8 +11,8 @@ class BaseEntity:
 			self.columns = columns
 
 		def show_all(self):
-			with connect() as conn:
-				table = Table(title=self.table_title)
+			with db_connect() as conn:
+				table = Table(title=self.table_title, style="green")
 				for column in self.columns:
 						table.add_column(column)
 
