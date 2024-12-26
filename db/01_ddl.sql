@@ -103,7 +103,7 @@ ALTER TABLE radna_prostorija ADD CONSTRAINT radna_prostorija_pk PRIMARY KEY ( id
 CREATE TABLE rukovodi (
     osoba_id INTEGER NOT NULL,
     id_prog  VARCHAR(10) NOT NULL,
-    upr      BOOLEAN NOT NULL
+    upr      BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 ALTER TABLE rukovodi ADD CONSTRAINT rukovodi_pk PRIMARY KEY ( osoba_id,

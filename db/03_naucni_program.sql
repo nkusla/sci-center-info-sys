@@ -5,7 +5,7 @@ INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('LIN', 'Lingvistika', '
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('DRH', 'Seminar drustveno-humanistickih nauka', 'A');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('HEM', 'Hemija', 'B');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('BIO', 'Biologija', 'B');
-INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('GEO', 'Geografija', 'B');
+INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('GEO', 'Geologija', 'B');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('GGR', 'Geografija', 'B');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('BMD', 'Biomedicina', 'B');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('EBH', 'Eksperimentalna biologija i hemija', 'B');
@@ -16,4 +16,4 @@ INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('RAC', 'Racunarstvo', '
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('ELE', 'Elektronika', 'C');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('TEH', 'Seminar tehnickih nauka', 'C');
 INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('DIZ', 'Dizajn', 'D');
-INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('ALL', 'Seminar kombinovanih nauka', 'E');
+INSERT INTO naucni_program (id_prog, naz, id_od) VALUES ('ALL', 'Seminar kombinovanih nauka', NULL);
