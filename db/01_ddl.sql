@@ -39,7 +39,7 @@ CREATE TABLE knjiga (
 ALTER TABLE knjiga ADD CONSTRAINT knjiga_pk PRIMARY KEY ( id_k );
 
 CREATE TABLE naucni_program (
-    id_prog CHAR(10) NOT NULL,
+    id_prog VARCHAR(10) NOT NULL,
     naz     VARCHAR(50),
     id_od   CHAR(1)
 );
@@ -58,8 +58,8 @@ CREATE TABLE oprema (
     naz      INTEGER,
     max_kol  INTEGER,
     osoba_id INTEGER,
-    id_sem   CHAR(10),
-    id_prog  CHAR(10)
+    id_sem   VARCHAR(10),
+    id_prog  VARCHAR(10)
 );
 
 ALTER TABLE oprema ADD CONSTRAINT oprema_pk PRIMARY KEY ( id_op );
@@ -80,8 +80,8 @@ CREATE TABLE osoba (
 ALTER TABLE osoba ADD CONSTRAINT osoba_pk PRIMARY KEY ( id );
 
 CREATE TABLE pozvan_na (
-    id_sem   CHAR(10) NOT NULL,
-    id_prog  CHAR(10) NOT NULL,
+    id_sem   VARCHAR(10) NOT NULL,
+    id_prog  VARCHAR(10) NOT NULL,
     osoba_id INTEGER NOT NULL
 );
 
@@ -95,14 +95,14 @@ CREATE TABLE radna_prostorija (
     naz     VARCHAR(50),
     lok     VARCHAR(50),
     tip     VARCHAR(20),
-    id_prog CHAR(10)
+    id_prog VARCHAR(10)
 );
 
 ALTER TABLE radna_prostorija ADD CONSTRAINT radna_prostorija_pk PRIMARY KEY ( id_rp );
 
 CREATE TABLE rukovodi (
     osoba_id INTEGER NOT NULL,
-    id_prog  CHAR(10) NOT NULL,
+    id_prog  VARCHAR(10) NOT NULL,
     upr      BOOLEAN NOT NULL
 );
 
@@ -110,11 +110,11 @@ ALTER TABLE rukovodi ADD CONSTRAINT rukovodi_pk PRIMARY KEY ( osoba_id,
                                                               id_prog );
 
 CREATE TABLE seminar (
-    id_sem    CHAR(10) NOT NULL,
+    id_sem    VARCHAR(10) NOT NULL,
     dat_start DATE,
     dat_kraj  DATE,
     tip       VARCHAR(20),
-    id_prog   CHAR(10) NOT NULL
+    id_prog   VARCHAR(10) NOT NULL
 );
 
 ALTER TABLE seminar ADD CONSTRAINT seminar_pk PRIMARY KEY ( id_sem,
