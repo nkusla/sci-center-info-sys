@@ -12,7 +12,7 @@ class BaseEntity:
 
 		def show_all(self):
 			with db_connect() as conn:
-				table = Table(title=self.table_title, style="green")
+				table = Table(title=self.table_title, style="blue")
 				for column in self.columns:
 						table.add_column(column)
 
