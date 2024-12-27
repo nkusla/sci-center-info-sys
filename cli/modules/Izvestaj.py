@@ -10,7 +10,7 @@ class Izvestaj():
 		self.menu_options = "\n".join([
 					"[1] Izvestaj odeljenja",
 					"[2] Rukovodjenje programa",
-					"[3] ...",
+					"[3] Popis prostorija",
 					"[4] Nazad",
 				])
 
@@ -30,6 +30,8 @@ class Izvestaj():
 				self.izvestaj_odeljenja()
 			elif choice == "2":
 				self.izvestaj_rukovodjenja()
+			elif choice == "3":
+				self.izvestaj_popis_prostorija()
 			elif choice == "4":
 				break
 
@@ -64,7 +66,7 @@ class Izvestaj():
 			table.add_column("ID", style="green")
 			table.add_column("Naziv")
 			table.add_column("Sef odeljenja")
-			table.add_column("Broj naucnih programa")
+			table.add_column("Broj naucnih programa", justify="center")
 
 			for row in rows:
 				table.add_row(*[str(x) for x in row])
@@ -103,6 +105,38 @@ class Izvestaj():
 			table.add_column("Rukovodilac")
 			table.add_column("Naziv programa")
 			table.add_column("ID odeljenja")
+
+			for row in rows:
+				table.add_row(*[str(x) for x in row])
+
+			self.console.print(table)
+			Prompt.ask(">>")
+
+	# Jednostavan upit
+	def izvestaj_popis_prostorija(self):
+		with db_connect() as con:
+			cur = con.cursor()
+			cur.execute('''
+				SELECT
+						np.id_prog,
+						np.naz,
+						COUNT(CASE WHEN tip = 'KANC' THEN 1 END) as br_kanc,
+						COUNT(CASE WHEN tip = 'LAB' THEN 1 END) as br_lab,
+						COUNT(CASE WHEN tip = 'UCIONICA' THEN 1 END) as br_uci
+				FROM radna_prostorija rp
+				RIGHT JOIN naucni_program np ON np.id_prog = rp.id_prog
+				GROUP BY np.id_prog
+				ORDER BY np.id_prog;
+			''')
+
+			rows = cur.fetchall()
+
+			table = Table(title="Popis radnih prostorija po naucnim programima", style="blue")
+			table.add_column("ID", style="green")
+			table.add_column("Naziv programa")
+			table.add_column("Broj kancelarija", justify="center")
+			table.add_column("Broj laboratorija", justify="center")
+			table.add_column("Broj ucionica", justify="center")
 
 			for row in rows:
 				table.add_row(*[str(x) for x in row])

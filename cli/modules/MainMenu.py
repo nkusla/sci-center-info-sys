@@ -5,6 +5,7 @@ from modules.NaucniProgram import NaucniProgram
 from modules.Odeljenje import Odeljenje
 from modules.RadnaProstorija import RadnaProstorija
 from modules.Izvestaj import Izvestaj
+from modules.Osoba import Osoba
 from modules.utils import clear_screen
 
 banner = '''[bold blue]
@@ -23,21 +24,24 @@ class MainMenu():
 			"[2] Naucni programi",
 			"[3] Seminari",
 			"[4] Radne prostorije",
-			"[5] Izvestaji",
-			"[6] Izlaz"
+			"[5] Osobe u centru",
+			"[6] Izvestaji",
+			"[7] Izlaz"
 		])
 
 		naucni_program = NaucniProgram(self.console)
 		odeljenje = Odeljenje(self.console)
 		radna_prostorija = RadnaProstorija(self.console)
 		izvestaj = Izvestaj(self.console)
+		osoba = Osoba(self.console)
 
 		self.options["1"] = lambda: odeljenje.show_all()
 		self.options["2"] = lambda: naucni_program.show_all()
 		self.options["3"] = lambda: exit()
 		self.options["4"] = lambda: radna_prostorija.show_all()
-		self.options["5"] = lambda: izvestaj.show_menu()
-		self.options["6"] = lambda: exit()
+		self.options["5"] = lambda: osoba.show_all()
+		self.options["6"] = lambda: izvestaj.show_menu()
+		self.options["7"] = lambda: exit()
 
 	def show_menu(self):
 		self.console.print(banner)
