@@ -22,11 +22,10 @@ class MainMenu():
 		self.menu_options = "\n".join([
 			"[1] Odeljenja",
 			"[2] Naucni programi",
-			"[3] Seminari",
-			"[4] Radne prostorije",
-			"[5] Osobe u centru",
-			"[6] Izvestaji",
-			"[7] Izlaz"
+			"[3] Radne prostorije",
+			"[4] Osobe u centru",
+			"[5] Izvestaji",
+			"[6] Izlaz"
 		])
 
 		naucni_program = NaucniProgram(self.console)
@@ -37,11 +36,10 @@ class MainMenu():
 
 		self.options["1"] = lambda: odeljenje.show_all()
 		self.options["2"] = lambda: naucni_program.show_all()
-		self.options["3"] = lambda: exit()
-		self.options["4"] = lambda: radna_prostorija.show_all()
-		self.options["5"] = lambda: osoba.show_all()
-		self.options["6"] = lambda: izvestaj.show_menu()
-		self.options["7"] = lambda: exit()
+		self.options["3"] = lambda: radna_prostorija.show_all()
+		self.options["4"] = lambda: osoba.run()
+		self.options["5"] = lambda: izvestaj.show_menu()
+		self.options["6"] = lambda: exit()
 
 	def show_menu(self):
 		self.console.print(banner)
