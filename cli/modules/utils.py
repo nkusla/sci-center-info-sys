@@ -18,3 +18,6 @@ def db_connect():
 
 def clear_screen():
 	os.system('clear' if os.name == 'posix' else 'cls')
+
+def entity_to_list(entity: list[tuple]) -> list[str]:
+	return [str(x) for x in entity]
