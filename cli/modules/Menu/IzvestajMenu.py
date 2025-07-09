@@ -4,7 +4,7 @@ from rich.table import Table
 from rich.panel import Panel
 from modules.utils import db_connect, clear_screen
 
-class Izvestaj():
+class IzvestajMenu():
 	def __init__(self, console: Console):
 		self.console = console
 		self.menu_options = "\n".join([

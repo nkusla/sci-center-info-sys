@@ -1,11 +1,11 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.panel import Panel
-from modules.NaucniProgram import NaucniProgram
-from modules.Odeljenje import Odeljenje
-from modules.RadnaProstorija import RadnaProstorija
-from modules.Izvestaj import Izvestaj
-from modules.Osoba import Osoba
+from modules.Menu.NaucniProgramMenu import NaucniProgramMenu
+from modules.Menu.OdeljenjeMenu import OdeljenjeMenu
+from modules.Menu.RadnaProstorijaMenu import RadnaProstorijaMenu
+from modules.Menu.IzvestajMenu import IzvestajMenu
+from modules.Menu.OsobaMenu import OsobaMenu
 from modules.utils import clear_screen
 
 banner = '''[bold blue]
@@ -28,11 +28,11 @@ class MainMenu():
 			"[6] Izlaz"
 		])
 
-		naucni_program = NaucniProgram(self.console)
-		odeljenje = Odeljenje(self.console)
-		radna_prostorija = RadnaProstorija(self.console)
-		izvestaj = Izvestaj(self.console)
-		osoba = Osoba(self.console)
+		naucni_program = NaucniProgramMenu(self.console)
+		odeljenje = OdeljenjeMenu(self.console)
+		radna_prostorija = RadnaProstorijaMenu(self.console)
+		izvestaj = IzvestajMenu(self.console)
+		osoba = OsobaMenu(self.console)
 
 		self.options["1"] = lambda: odeljenje.show_all()
 		self.options["2"] = lambda: naucni_program.show_all()

@@ -1,10 +1,10 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.panel import Panel
-from modules.BaseEntity import BaseEntity
+from modules.Menu.BaseEntityMenu import BaseEntityMenu
 from modules.utils import clear_screen, db_connect
 
-class Osoba(BaseEntity):
+class OsobaMenu(BaseEntityMenu):
 	def __init__(self, console: Console):
 		self.columns = ['ID', 'JMBG', 'Ime', 'Prezime', "Telefon", "Email", "Tip", "Saradnicka uloga"]
 		self.console = console

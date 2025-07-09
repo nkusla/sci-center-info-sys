@@ -3,7 +3,7 @@ from rich.prompt import Prompt
 from rich.table import Table
 from modules.utils import db_connect
 
-class BaseEntity:
+class BaseEntityMenu:
 		def __init__(self, console: Console, table_name: str, table_title: str, columns: list):
 			self.console = console
 			self.table_name = table_name
