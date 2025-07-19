@@ -1,5 +1,7 @@
 # Science Center Information System
 
+![](./main_page.png)
+
 This small project was done for course **Databases 2**. It runs a simple CLI application that allows to manage a database of a science center. Database used is PostgreSQL and it is run in a Docker container.
 
 It required:
