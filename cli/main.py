@@ -1,5 +1,5 @@
-from modules.Menu.MainMenu import MainMenu
+from modules.UI.MainUI import MainUI
 
 if __name__ == "__main__":
-	menu = MainMenu()
-	menu.run()
+	main = MainUI()
+	main.run()

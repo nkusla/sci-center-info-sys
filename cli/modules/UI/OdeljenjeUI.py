@@ -1,8 +1,8 @@
 from rich.console import Console
-from modules.Menu.BaseEntityMenu import BaseEntityMenu
+from modules.UI.BaseEntityUI import BaseEntityUI
 from modules.Service.OdeljenjeService import OdeljenjeService
 
-class OdeljenjeMenu(BaseEntityMenu):
+class OdeljenjeUI(BaseEntityUI):
 	def __init__(self, console: Console):
 		columns = ['ID', 'Naziv']
 

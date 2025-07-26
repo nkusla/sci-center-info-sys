@@ -1,8 +1,8 @@
 from rich.console import Console
 from modules.Service.NaucniProgramService import NaucniProgramService
-from modules.Menu.BaseEntityMenu import BaseEntityMenu
+from modules.UI.BaseEntityUI import BaseEntityUI
 
-class NaucniProgramMenu(BaseEntityMenu):
+class NaucniProgramUI(BaseEntityUI):
 	def __init__(self, console: Console):
 		columns = ['ID', 'Naziv', 'Odeljenje']
 

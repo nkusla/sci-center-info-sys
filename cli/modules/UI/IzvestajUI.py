@@ -5,7 +5,7 @@ from rich.panel import Panel
 from modules.Service.IzvestajService import IzvestajService
 from modules.utils import clear_screen, entity_to_list
 
-class IzvestajMenu:
+class IzvestajUI:
 	def __init__(self, console: Console):
 		self.console = console
 		self.service = IzvestajService()

@@ -5,7 +5,7 @@ from modules.utils import db_connect
 from typing import Type
 from modules.utils import entity_to_list
 
-class BaseEntityMenu:
+class BaseEntityUI:
 	def __init__(self, console: Console, service: Type, table_title: str, columns: list):
 		self.console = console
 		self.service = service

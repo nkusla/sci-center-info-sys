@@ -2,10 +2,10 @@ from rich.console import Console
 from rich.prompt import Prompt
 from rich.panel import Panel
 from modules.Service.OsobaService import OsobaService
-from modules.Menu.BaseEntityMenu import BaseEntityMenu
+from modules.UI.BaseEntityUI import BaseEntityUI
 from modules.utils import clear_screen, db_connect
 
-class OsobaMenu(BaseEntityMenu):
+class OsobaUI(BaseEntityUI):
 	def __init__(self, console: Console):
 		columns = ['ID', 'JMBG', 'Ime', 'Prezime', "Telefon", "Email", "Tip", "Saradnicka uloga"]
 		super().__init__(

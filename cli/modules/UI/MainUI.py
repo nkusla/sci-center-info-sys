@@ -1,11 +1,11 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.panel import Panel
-from modules.Menu.NaucniProgramMenu import NaucniProgramMenu
-from modules.Menu.OdeljenjeMenu import OdeljenjeMenu
-from modules.Menu.RadnaProstorijaMenu import RadnaProstorijaMenu
-from modules.Menu.IzvestajMenu import IzvestajMenu
-from modules.Menu.OsobaMenu import OsobaMenu
+from modules.UI.NaucniProgramUI import NaucniProgramUI
+from modules.UI.OdeljenjeUI import OdeljenjeUI
+from modules.UI.RadnaProstorijaUI import RadnaProstorijaUI
+from modules.UI.IzvestajUI import IzvestajUI
+from modules.UI.OsobaUI import OsobaUI
 from modules.utils import clear_screen
 
 banner = '''[bold blue]
@@ -15,7 +15,7 @@ banner = '''[bold blue]
 | |\  | (_| | |_| | (__| | | | | | (_|  __/ | | | || (_| | |
 |_| \_|\__,_|\__,_|\___|_| |_|_|  \___\___|_| |_|\__\__,_|_|   '''
 
-class MainMenu():
+class MainUI():
 	def __init__(self):
 		self.console = Console()
 		self.options = {}
@@ -28,11 +28,11 @@ class MainMenu():
 			"[6] Izlaz"
 		])
 
-		naucni_program = NaucniProgramMenu(self.console)
-		odeljenje = OdeljenjeMenu(self.console)
-		radna_prostorija = RadnaProstorijaMenu(self.console)
-		izvestaj = IzvestajMenu(self.console)
-		osoba = OsobaMenu(self.console)
+		naucni_program = NaucniProgramUI(self.console)
+		odeljenje = OdeljenjeUI(self.console)
+		radna_prostorija = RadnaProstorijaUI(self.console)
+		izvestaj = IzvestajUI(self.console)
+		osoba = OsobaUI(self.console)
 
 		self.options["1"] = lambda: odeljenje.show_all()
 		self.options["2"] = lambda: naucni_program.show_all()
