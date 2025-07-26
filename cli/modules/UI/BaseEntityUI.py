@@ -3,7 +3,7 @@ from rich.prompt import Prompt
 from rich.table import Table
 from modules.utils import db_connect
 from typing import Type
-from modules.utils import entity_to_list
+from modules.utils import entity_to_row
 
 class BaseEntityUI:
 	def __init__(self, console: Console, service: Type, table_title: str, columns: list):
@@ -20,7 +20,7 @@ class BaseEntityUI:
 		table.columns[0].style = "green"
 
 		for entity in self.service.get_all():
-			table.add_row(*entity_to_list(entity))
+			table.add_row(*entity_to_row(entity))
 
 		self.console.print(table)
 		Prompt.ask(">>")

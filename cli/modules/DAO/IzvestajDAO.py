@@ -1,8 +1,9 @@
 from modules.utils import db_connect
+from modules.Model.Izvestaj import *
 
 class IzvestajDAO:
 	# Kompleksan upit
-	def get_izvestaj_odeljenja(self):
+	def get_izvestaj_odeljenja(self) -> list[IzvestajOdeljenja]:
 		with db_connect() as con:
 			cur = con.cursor()
 			cur.execute('''
@@ -26,10 +27,21 @@ class IzvestajDAO:
 				LEFT OUTER JOIN sefovi_odeljenja so ON os.id_od = so.id_od;
 			''')
 
-			return cur.fetchall()
+			odeljenja = []
+			for row in cur.fetchall():
+				odeljenja.append(
+					IzvestajOdeljenja(
+						id_od=row[0],
+						naz=row[1],
+						sef=row[2],
+						broj_programa=row[3]
+					)
+				)
+
+			return odeljenja
 
 	# Kompleksan upit
-	def get_izvestaj_rukovodjenja(self):
+	def get_izvestaj_rukovodjenja(self) -> list[IzvestajRukovodjenja]:
 		with db_connect() as con:
 			cur = con.cursor()
 			cur.execute('''
@@ -52,10 +64,21 @@ class IzvestajDAO:
 				ORDER BY ruk.ime, ruk.prz;
 			''')
 
-			return cur.fetchall()
+			rukovodjenja = []
+			for row in cur.fetchall():
+				rukovodjenja.append(
+					IzvestajRukovodjenja(
+						id=row[0],
+						ime_prz=row[1],
+						naz=row[2],
+						id_od=row[3]
+					)
+				)
+
+			return rukovodjenja
 
 	# Jednostavan upit
-	def get_izvestaj_popis_prostorija(self):
+	def get_izvestaj_popis_prostorija(self) -> list[IzvestajPopisProstorija]:
 		with db_connect() as con:
 			cur = con.cursor()
 			cur.execute('''
@@ -71,4 +94,16 @@ class IzvestajDAO:
 				ORDER BY np.id_prog;
 			''')
 
-			return cur.fetchall()
+			prostorije = []
+			for row in cur.fetchall():
+				prostorije.append(
+					IzvestajPopisProstorija(
+						id_prog=row[0],
+						naz=row[1],
+						br_kanc=row[2],
+						br_lab=row[3],
+						br_uci=row[4]
+					)
+				)
+
+			return prostorije

@@ -1,10 +1,10 @@
 from modules.utils import db_connect
 from modules.DAO.BaseEntityDAO import BaseEntityDAO
+from modules.Model.Osoba import Osoba
 
 class OsobaDAO(BaseEntityDAO):
 	def __init__(self):
-		attributes = ['id', 'jmbg', 'ime', 'prz', 'br_tel', 'email', "tip", "uloga"]
-		super().__init__('osoba', attributes)
+		super().__init__('osoba', Osoba)
 
 	def add_rukovodilac(self, osoba_id: int, program_id: int):
 		with db_connect() as conn:

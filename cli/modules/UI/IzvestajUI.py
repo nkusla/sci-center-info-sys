@@ -3,7 +3,7 @@ from rich.prompt import Prompt
 from rich.table import Table
 from rich.panel import Panel
 from modules.Service.IzvestajService import IzvestajService
-from modules.utils import clear_screen, entity_to_list
+from modules.utils import clear_screen, entity_to_row
 
 class IzvestajUI:
 	def __init__(self, console: Console):
@@ -51,7 +51,7 @@ class IzvestajUI:
 		table.add_column("Broj naucnih programa", justify="center")
 
 		for entity in entities:
-			table.add_row(*entity_to_list(entity))
+			table.add_row(*entity_to_row(entity))
 
 		self.console.print(table)
 		Prompt.ask(">>")
@@ -67,7 +67,7 @@ class IzvestajUI:
 		table.add_column("ID odeljenja")
 
 		for entity in entities:
-			table.add_row(*entity_to_list(entity))
+			table.add_row(*entity_to_row(entity))
 
 		self.console.print(table)
 		Prompt.ask(">>")
@@ -84,7 +84,7 @@ class IzvestajUI:
 		table.add_column("Broj ucionica", justify="center")
 
 		for entity in entities:
-			table.add_row(*entity_to_list(entity))
+			table.add_row(*entity_to_row(entity))
 
 		self.console.print(table)
 		Prompt.ask(">>")
