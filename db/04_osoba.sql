@@ -166,4 +166,4 @@ values
 INSERT INTO osoba
 	(jmbg, ime, prz, br_tel, email, tip, br_sob, uloga, sef_id)
 values
-	('1234567890125', 'Diana', 'Santavec', '+381 00 000-0000', 'Diana.Santavec@mail.com', 'SARADNIK', NULL, 'MLADJI', NULL);
+	('1234567890012', 'Diana', 'Santavec', '+381 00 000-0000', 'Diana.Santavec@mail.com', 'SARADNIK', NULL, 'MLADJI', NULL);

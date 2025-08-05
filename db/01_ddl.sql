@@ -48,7 +48,7 @@ ALTER TABLE naucni_program ADD CONSTRAINT naucni_program_pk PRIMARY KEY ( id_pro
 
 CREATE TABLE odeljenje (
     id_od CHAR(1) NOT NULL,
-    naz   VARCHAR(50) NOT NULL,
+    naz   VARCHAR(50) NOT NULL
 );
 
 ALTER TABLE odeljenje ADD CONSTRAINT odeljenje_pk PRIMARY KEY ( id_od );
